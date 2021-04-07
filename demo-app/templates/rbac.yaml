@@ -5,7 +5,7 @@ metadata:
   namespace: {{ .Release.Namespace }}
 roleRef:
   kind: ClusterRole
-  name: unrestricted-psp
+  name: unrestricted-clusterrole
   apiGroup: rbac.authorization.k8s.io
 subjects:
   - kind: ServiceAccount
