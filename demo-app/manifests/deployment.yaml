@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: demo-app
+  name: demo-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: demo-app
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: demo-app
+    spec:
+      containers:
+      - image: chhpe/color-app:1.0.0
+        name: color-app
+        resources: {}
+        ports:
+        - containerPort: 8080
+        env:
+        - name: APP_COLOR
+          value: "green"

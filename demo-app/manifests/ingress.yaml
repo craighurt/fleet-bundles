@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+  name: demo-app
+spec:
+  rules:
+  - host: rancher-green.hpelab.uk
+    http:
+      paths:
+      - backend:
+          serviceName: demo-app
+          servicePort: 8080
+        path: /app
+        pathType: ImplementationSpecific
