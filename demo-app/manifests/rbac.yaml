@@ -1,7 +1,7 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
-  name: unrestricted-psp:serviceaccount:demo-app
+  name: unrestricted-psp:serviceaccount:test:demo-app
 roleRef:
   kind: ClusterRole
   name: unrestricted-psp
