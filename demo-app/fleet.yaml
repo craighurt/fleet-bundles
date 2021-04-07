@@ -1,1 +1,17 @@
 namespace: demo-app-green
+
+helm:
+  releaseName: demo-app-green
+  chart: ""
+  repo: ""
+  version: ""
+  force: false
+  timeoutSeconds: 0
+
+  values:
+    replicas: 2
+    ingress:
+      host: "rancher-green.hpelab.uk"
+      path: "/app"
+    app:
+      color: "green"

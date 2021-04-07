@@ -1,0 +1,13 @@
+replicas: 2
+
+image:
+  name: "chhpe/color-app"
+  tag: "1.0.0"
+
+ingress:
+  host: "rancher-green.hpelab.uk"
+  path: "/app"
+
+app:
+  color: "green"
+
