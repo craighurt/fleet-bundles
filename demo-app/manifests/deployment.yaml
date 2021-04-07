@@ -24,3 +24,4 @@ spec:
         env:
         - name: APP_COLOR
           value: "green"
+      serviceAccountName: demo-app
