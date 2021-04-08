@@ -14,4 +14,4 @@ helm:
       host: "rancher-blue.hpelab.uk"
       path: "/app"
     app:
-      color: "blue"
+      color: "red"
