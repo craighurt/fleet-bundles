@@ -11,7 +11,7 @@ helm:
   values:
     replicas: 2
     ingress:
-      host: "demo-app.hpelab.uk"
+      host: "demo-app-staging.hpelab.uk"
       path: "/dev"
     app:
       color: "red"
