@@ -41,7 +41,7 @@ spec:
         env:
           - name: APP_COLOR
             value: {{ .Values.app.color }}
-      serviceAccountName: demo-app
+      serviceAccountName: {{ include "demo-app.fullname" . }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
