@@ -10,6 +10,8 @@ helm:
 
   values:
     replicas: 2
+    image:
+      tag: "1.0.1"
     ingress:
       host: "demo-app-staging.hpelab.uk"
       path: "/dev"
