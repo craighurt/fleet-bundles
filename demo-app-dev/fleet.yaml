@@ -4,7 +4,7 @@ helm:
   releaseName: demo-app-dev
   chart: "demo-app"
   repo: "http://chartmuseum.hpelab.uk"
-  version: "1.0.0"
+  version: "1.0.1"
   force: false
   timeoutSeconds: 0
 
