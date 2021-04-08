@@ -9,7 +9,7 @@ helm:
   timeoutSeconds: 0
 
   values:
-    replicas: 4
+    replicas: 2
     image:
       tag: "1.0.1"
     ingress:
