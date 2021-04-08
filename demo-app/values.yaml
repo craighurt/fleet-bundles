@@ -26,5 +26,5 @@ tolerations: []
 
 affinity: {}
 
-resources: []
+resources: {}
 
