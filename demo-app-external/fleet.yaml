@@ -1,0 +1,17 @@
+namespace: demo-app-green
+
+helm:
+  releaseName: demo-app-green
+  chart: "demo-app"
+  repo: "http://chartmuseum.hpelab.uk"
+  version: "1.0.0"
+  force: false
+  timeoutSeconds: 0
+
+  values:
+    replicas: 2
+    ingress:
+      host: "rancher-green.hpelab.uk"
+      path: "/app"
+    app:
+      color: "green"
