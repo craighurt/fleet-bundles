@@ -9,7 +9,7 @@ helm:
   timeoutSeconds: 0
 
   values:
-    replicas: 2
+    replicas: 4
     ingress:
       host: "demo-app.hpelab.uk"
       path: "/prod"
