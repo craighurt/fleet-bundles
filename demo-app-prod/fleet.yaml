@@ -14,4 +14,4 @@ helm:
       host: "demo-app.hpelab.uk"
       path: "/prod"
     app:
-      color: "green"
+      color: "blue"
