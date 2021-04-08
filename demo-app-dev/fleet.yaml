@@ -1,0 +1,17 @@
+namespace: demo-app-dev
+
+helm:
+  releaseName: demo-app-dev
+  chart: "demo-app"
+  repo: "http://chartmuseum.hpelab.uk"
+  version: "1.0.0"
+  force: false
+  timeoutSeconds: 0
+
+  values:
+    replicas: 2
+    ingress:
+      host: "demo-app.hpelab.uk"
+      path: "/dev"
+    app:
+      color: "red"
