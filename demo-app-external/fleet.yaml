@@ -1,7 +1,7 @@
-namespace: demo-app-blue
+namespace: demo-app-green
 
 helm:
-  releaseName: demo-app-blue
+  releaseName: demo-app-green
   chart: "demo-app"
   repo: "http://chartmuseum.hpelab.uk"
   version: "1.0.0"
@@ -11,7 +11,7 @@ helm:
   values:
     replicas: 2
     ingress:
-      host: "rancher-blue.hpelab.uk"
+      host: "rancher-green.hpelab.uk"
       path: "/app"
     app:
-      color: "blue"
+      color: "green"
