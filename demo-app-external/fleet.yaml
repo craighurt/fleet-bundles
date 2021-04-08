@@ -1,7 +1,7 @@
-namespace: demo-app-green
+namespace: demo-app-blue
 
 helm:
-  releaseName: demo-app-green
+  releaseName: demo-app-blue
   chart: "demo-app"
   repo: "http://chartmuseum.hpelab.uk"
   version: "1.0.0"
